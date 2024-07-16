@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SplashScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_480sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="@dimen/_135sdp"
+            app:srcCompat="@drawable/img_app_logo"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/_308sdp"
+            android:layout_height="@dimen/_413sdp"
+            app:srcCompat="@drawable/img_side_logos"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_20sdp"/>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Nearest Local\nMarket"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_24sdp"
+        android:textColor="@color/black"
+        />
+
+</RelativeLayout>

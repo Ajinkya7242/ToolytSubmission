@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.IntroAppActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_135sdp"
+        android:layout_height="@dimen/_135sdp"
+        app:srcCompat="@drawable/img_app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_120sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/best_markitplac"
+            android:fontFamily="@font/inter_black"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/o_on_time_departures_pay_just_for_your_seat_no_refusal_from_our_end_spacious_comfortable_seating_female_passengers_safety_standards_onboard_refreshments_cab_tracking_through_maps"
+            android:fontFamily="@font/inter_semibold"
+            android:textColor="#020202"
+            android:textSize="@dimen/_12sdp"
+            android:lineSpacingExtra="@dimen/_4sdp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="center"
+            />
+
+        <RelativeLayout
+            android:id="@+id/btnGetStarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_btn_back_cleanup"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:foreground="?android:attr/selectableItemBackground">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Started"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

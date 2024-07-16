@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_180sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#50499c"
+    android:backgroundTint="#50499c"
+    app:cardCornerRadius="@dimen/_10sdp">
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       app:cardCornerRadius="@dimen/_10sdp"
+       android:layout_height="@dimen/_176sdp"
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/textView2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/inter_regular"
+               android:textStyle="bold"
+               android:textColor="#3E3E3E"
+               android:layout_marginHorizontal="@dimen/_20sdp"
+               android:layout_marginTop="@dimen/_20sdp"
+               android:gravity="center"
+               android:textSize="@dimen/_18sdp"
+               android:lineSpacingExtra="@dimen/_5sdp"
+               android:text="Your Confirmation Code is  Below - Enter it And We'll Help You Get Signed In." />
+
+
+           <com.chaos.view.PinView
+               android:id="@+id/pinView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:background="@drawable/bg_orange"
+               android:layout_gravity="center"
+               android:layout_marginTop="@dimen/_20sdp"
+               android:focusable="true"
+               android:focusableInTouchMode="true"
+                />
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>
